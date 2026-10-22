@@ -3,13 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Goguma Motion 更新履歴</title>
-<meta name="description" content="Goguma Motion のバージョンごとの変更点。What changed in each Goguma Motion version.">
-<meta property="og:title" content="Goguma Motion 更新履歴 / Release notes">
-<meta property="og:description" content="0.9.111: 書いた文章から動きを作れるようになりました。">
+<title>Goguma Motion｜3Dポーズ・構図でつくる作画資料</title>
+<meta name="description" content="Goguma Motionはイラスト・漫画の作画資料をつくるWindows用3Dアプリ。ポーズとカメラを調整してPNGを保存。モーション再生、複数人の構図、2Dスプライト出力にも対応。">
+<meta property="og:title" content="Goguma Motion｜3Dポーズ・構図でつくる作画資料">
+<meta property="og:description" content="Goguma Motionはイラスト・漫画の作画資料をつくるWindows用3Dアプリ。ポーズとカメラを調整してPNGを保存。モーション再生、複数人の構図、2Dスプライト出力にも対応。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://criel2019.github.io/goguma-motion/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://criel2019.github.io/goguma-motion/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Goguma Motion","url":"https://criel2019.github.io/goguma-motion/","operatingSystem":"Windows 10 / 11 (64-bit)","applicationCategory":"MultimediaApplication","description":"Goguma Motionはイラスト・漫画の作画資料をつくるWindows用3Dアプリ。ポーズとカメラを調整してPNGを保存。モーション再生、複数人の構図、2Dスプライト出力にも対応。","offers":{"@type":"Offer","price":"1980","priceCurrency":"JPY","url":"https://booth.pm/ja/items/9014189"}}</script>
 <meta name="theme-color" content="#18202a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox="0 0 128 128"%3E%3Crect width="128" height="128" rx="28" fill="%2318202a"/%3E%3Cpath d="M22 50h16M16 66h18M24 82h12" fill="none" stroke="%234d6a80" stroke-width="6" stroke-linecap="round"/%3E%3Cpath d="M70 42 62 72M44 56l26-14 22 14M62 72 46 100M62 72l22 14 10 16" fill="none" stroke="%2379c3b3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/%3E%3Cg fill="%23f0c478"%3E%3Ccircle cx="72" cy="26" r="9"/%3E%3Ccircle cx="70" cy="42" r="6"/%3E%3Ccircle cx="62" cy="72" r="6"/%3E%3Ccircle cx="84" cy="86" r="6"/%3E%3Ccircle cx="46" cy="100" r="6"/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20128%20128%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20rx%3D%2228%22%20fill%3D%22%2318202a%22%2F%3E%3Cpath%20d%3D%22M22%2050h16M16%2066h18M24%2082h12%22%20fill%3D%22none%22%20stroke%3D%22%234d6a80%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M70%2042%2062%2072M44%2056l26-14%2022%2014M62%2072%2046%20100M62%2072l22%2014%2010%2016%22%20fill%3D%22none%22%20stroke%3D%22%2379c3b3%22%20stroke-width%3D%227%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cg%20fill%3D%22%23f0c478%22%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2226%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%2242%22%20r%3D%226%22%2F%3E%3Ccircle%20cx%3D%2262%22%20cy%3D%2272%22%20r%3D%226%22%2F%3E%3Ccircle%20cx%3D%2284%22%20cy%3D%2286%22%20r%3D%226%22%2F%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%22100%22%20r%3D%226%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -95,6 +99,25 @@ html[lang="ja"] [data-lang="ja"],html[lang="en"] [data-lang="en"]{display:revert
   .release.older::before{left:2px}
 }
 code{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:.88em;background:#fff;border:1px solid var(--rule);border-radius:4px;padding:0 4px}
+
+.hero{padding:52px 0 36px}.eyebrow{color:var(--bone);font-size:.9rem;font-weight:700;letter-spacing:.04em}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.35;letter-spacing:-.03em;margin:12px 0 20px}
+.lead{font-size:1.08rem;max-width:40rem;color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:24px 0 12px}
+.cta{display:inline-block;background:var(--bone);color:#fff;border:2px solid var(--bone);border-radius:8px;padding:12px 18px;text-decoration:none;font-weight:700}
+.cta:hover{background:var(--navy);border-color:var(--navy)}.secondary{font-weight:700;padding:10px 0}
+.purchase-note{color:var(--muted);font-size:.9rem}
+.product-section{padding:32px 0;border-top:1px solid var(--rule)}
+.product-section h2{font-size:1.5rem;line-height:1.45;margin:0 0 18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:20px}
+.card h3{font-size:1.06rem;margin:0 0 10px}.card p{font-size:.95rem;color:var(--muted);margin:0}
+.steps{padding-left:1.5em}.steps li{padding-left:4px;margin:10px 0}
+.faq details{margin-top:16px}.faq details p{color:var(--muted);margin-bottom:0}
+.release-intro{padding:40px 0 8px;border-top:1px solid var(--rule)}
+.release-intro h2{font-size:1.7rem;margin:0 0 12px}.release-intro p{color:var(--muted)}
+@media(max-width:480px){.hero{padding-top:32px}.actions .cta{width:100%;text-align:center}.cards{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -112,10 +135,34 @@ code{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:.88em
 </header>
 
 <main class="wrap">
-  <section class="intro">
-    <h1><span data-lang="ja">更新履歴</span><span data-lang="en">Release notes</span></h1>
+<section class="hero" aria-labelledby="product-title">
+<p class="eyebrow">Goguma Motion · Windows 10 / 11 · 64-bit</p>
+<h1 id="product-title"><span data-lang="ja">描きたいポーズを、<br>欲しい角度から。</span><span data-lang="en">Build the pose.<br>Find your drawing angle.</span></h1>
+<p class="lead" data-lang="ja">イラスト・漫画の作画資料を、自分でつくる3Dアプリ。キャラクターのポーズを調整し、小物とカメラを配置。作画ビューを選んで、PNGの参考画像として保存できます。</p><p class="lead" data-lang="en">Make your own 3D drawing references for illustration and comics. Adjust a character's pose, arrange props and frame the shot. Choose a drawing view and save a PNG reference.</p>
+<div class="actions"><a class="cta" href="https://booth.pm/ja/items/9014189?utm_source=goguma-home&amp;utm_medium=referral&amp;utm_campaign=202610-drawing-reference&amp;utm_content=hero"><span data-lang="ja">BOOTHで詳細・購入へ · ¥1,980</span><span data-lang="en">View details &amp; buy on BOOTH · ¥1,980</span></a><a class="secondary" href="#how-it-works"><span data-lang="ja">使い方を見る ↓</span><span data-lang="en">See how it works ↓</span></a></div>
+<p class="purchase-note" data-lang="ja">内蔵キャラクター4体ですぐに開始。定期課金・書き出しごとの料金なし。購入前に下の動作環境と対応モデルをご確認ください。</p><p class="purchase-note" data-lang="en">Start with four built-in characters. No subscription or per-export fee. Check system and model requirements below before buying.</p>
+</section>
+<section class="product-section" aria-labelledby="use-cases"><h2 id="use-cases"><span data-lang="ja">こんな制作に</span><span data-lang="en">What will you make?</span></h2>
+<div class="cards"><article class="card"><h3><span data-lang="ja">イラストのポーズ資料</span><span data-lang="en">Pose references</span></h3><p class="" data-lang="ja">全身・部位別テンプレートと関節調整でポーズを作成。カメラと28種類の作画ビューから、描くときに使うPNGへ。</p><p class="" data-lang="en">Combine pose templates and joint adjustments. Choose a camera angle and one of 28 drawing views, then save a PNG reference.</p></article>
+<article class="card"><h3><span data-lang="ja">漫画・複数人の構図</span><span data-lang="en">Comic composition</span></h3><p class="" data-lang="ja">最大12体の人物と、椅子・テーブルなどの小物を配置。人物同士の距離、画面比率、カメラ位置を検討できます。</p><p class="" data-lang="en">Arrange up to 12 characters with props such as chairs and tables. Plan character spacing, aspect ratio and camera position.</p></article>
+<article class="card"><h3><span data-lang="ja">動きの参考・2Dスプライト</span><span data-lang="en">Motion &amp; 2D sprites</span></h3><p class="" data-lang="ja">内蔵の待機・歩き・走り90種やFBX／BVHを再生。動きの参考にしたり、方向・FPS・サイズを決めてスプライト画像へ。</p><p class="" data-lang="en">Play 90 built-in idle, walk and run motions, or import FBX/BVH animation. Study movement or export sprites with your chosen directions, FPS and size.</p></article></div></section>
+<section class="product-section" id="how-it-works" aria-labelledby="workflow-title"><h2 id="workflow-title"><span data-lang="ja">作画資料ができるまで</span><span data-lang="en">From pose to reference</span></h2>
+<ol class="steps">
+<li><span data-lang="ja"><strong>キャラクターを選ぶ。</strong> 内蔵キャラクター、または対応する自分のモデルを読み込みます。</span><span data-lang="en"><strong>Choose a character.</strong> Start with a built-in character or load your own supported model.</span></li>
+<li><span data-lang="ja"><strong>ポーズと構図を作る。</strong> 関節を調整し、小物を置いて、カメラと画面比率を決めます。</span><span data-lang="en"><strong>Pose and frame.</strong> Adjust joints, add props, then set the camera and aspect ratio.</span></li>
+<li><span data-lang="ja"><strong>PNGで保存する。</strong> 作画ビューを選び、イラスト・漫画の参考画像に。</span><span data-lang="en"><strong>Save a PNG.</strong> Choose a drawing view and use the image as a reference.</span></li>
+</ol><p><a href="https://booth.pm/ja/items/9014189?utm_source=goguma-home&amp;utm_medium=referral&amp;utm_campaign=202610-drawing-reference&amp;utm_content=workflow"><span data-lang="ja">実際の画面・動画・全機能をBOOTHで確認する →</span><span data-lang="en">See screenshots, videos and the complete feature list on BOOTH →</span></a></p></section>
+<section class="product-section faq" aria-labelledby="faq-title"><h2 id="faq-title"><span data-lang="ja">購入前に確認したいこと</span><span data-lang="en">Before you buy</span></h2>
+<details><summary><span data-lang="ja">必要なパソコンは？</span><span data-lang="en">What computer do I need?</span></summary><p class="" data-lang="ja">Windows 10／11（64bit）、x64・4コア以上、メモリ8GB以上、空き容量2GB以上。6コア・メモリ16GBを推奨します。GPUはVulkan対応を推奨し、D3D12／OpenGL 3.3では一部制限があります。詳細はBOOTHの商品説明をご確認ください。</p><p class="" data-lang="en">Windows 10/11 (64-bit), x64 CPU with at least four cores, 8GB RAM and 2GB free storage. Six cores and 16GB RAM are recommended. A Vulkan-capable GPU is preferred; D3D12/OpenGL 3.3 have limitations. See BOOTH for the full requirements.</p></details>
+<details><summary><span data-lang="ja">自分のキャラクターを使える？</span><span data-lang="en">Can I use my own character?</span></summary><p class="" data-lang="ja">GLB／glTF／FBX／VRMに対応。VRM 0.x／1.0のHumanoidボーン情報を利用しますが、MToon・揺れものには対応していません。特殊な体型・ポーズ・重ね着は手動調整が必要な場合があります。骨のない人型モデルの自動リギングも、適用前の確認・調整が必要です。</p><p class="" data-lang="en">GLB, glTF, FBX and VRM are supported. VRM 0.x/1.0 humanoid bone data is used; MToon and spring bones are not supported. Unusual proportions, poses or layered clothing may need adjustment. Automatic rigging for unrigged humanoids also needs checking before applying.</p></details>
+<details><summary><span data-lang="ja">書き出したものを商用利用できる？</span><span data-lang="en">Can I use exports commercially?</span></summary><p class="" data-lang="ja">作成・書き出した画像・動画・ポーズ・モーション・スプライト・モデルは、内蔵素材を含めて個人・商用利用できます。持ち込み素材は権利者の条件に従ってください。内蔵100STYLEを元にしたモーションデータを公開する場合は「100STYLE dataset — Ian Mason, CC BY 4.0」の表記が必要です。アプリ本体の再配布・転売・共有は禁止です。</p><p class="" data-lang="en">Created/exported images, videos, poses, motions, sprites and models may be used personally or commercially, including built-in assets. Follow rights holders' terms for imported assets. Publishing motion data derived from built-in 100STYLE motions requires “100STYLE dataset — Ian Mason, CC BY 4.0”. Redistribution, resale and sharing of the app are prohibited.</p></details>
+<details><summary><span data-lang="ja">写真・動画の自動解析やWebカメラ撮影は？</span><span data-lang="en">Does it include photo/video analysis or webcam capture?</span></summary><p class="" data-lang="ja">現在のBOOTH販売範囲には、写真のポーズ解析・画像からの構図自動作成・画像からの3D小物生成・動画からのモーション解析・Webカメラモーションキャプチャは含まれません。Goguma Rigの一括処理・CLI・MCPも別製品です。購入対象の機能はBOOTHの商品説明を基準にご確認ください。</p><p class="" data-lang="en">The current BOOTH product does not include photo pose analysis, automatic composition from images, image-to-3D props, video-to-motion analysis or webcam motion capture. Goguma Rig batch processing, CLI and MCP are a separate product. Check the BOOTH listing for included features.</p></details>
+<div class="actions"><a class="cta" href="https://booth.pm/ja/items/9014189?utm_source=goguma-home&amp;utm_medium=referral&amp;utm_campaign=202610-drawing-reference&amp;utm_content=faq"><span data-lang="ja">対応環境を確認して、Windows版を購入する</span><span data-lang="en">Check requirements &amp; buy the Windows app</span></a></div></section>
+  <section class="release-intro" id="release-notes" aria-labelledby="release-title">
+    <h2 id="release-title"><span data-lang="ja">更新履歴</span><span data-lang="en">Release notes</span></h2>
     <p data-lang="ja">バージョンごとの変更点です。更新するときは、新しい ZIP を展開して以前のフォルダーに上書きしてください（新しいフォルダーに展開しても構いません）。設定・保存した作業・ダウンロード済みの AI 機能はそのまま使えます。</p>
     <p data-lang="en">What changed in each version. To update, extract the new ZIP over your previous folder (or into a new folder). Your settings, saved work and downloaded AI features carry over.</p>
+<p class="note" data-lang="ja">以下は開発・更新の記録です。現在の販売内容・同梱範囲はBOOTHの商品説明をご確認ください。</p><p class="note" data-lang="en">This is a development and update history. Check the BOOTH listing for the currently sold product and included features.</p>
   </section>
 
   <ol class="chain">
@@ -230,7 +277,7 @@ code{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:.88em
   var root=document.documentElement,buttons=document.querySelectorAll('.lang button');
   function apply(lang){
     root.lang=lang;
-    document.title=lang==='ja'?'Goguma Motion 更新履歴':'Goguma Motion release notes';
+    document.title=lang==='ja'?'Goguma Motion｜3Dポーズ・構図でつくる作画資料':'Goguma Motion | 3D pose and drawing references';
     buttons.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===lang))});
   }
   var saved=null;
